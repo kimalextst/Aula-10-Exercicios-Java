@@ -6,10 +6,17 @@ import java.util.Scanner;
 
 public class exercicio5 {
     public static void main(String[] args) {
-        
+        calcularTemperatura();
     }
-    public static void name() {
+    public static void calcularTemperatura() {
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.print("Insira a temperatura em °C: ");
+        double celsius = leitor.nextDouble();
         
+        double fahrenheit = ((9 * celsius) + 160) / 5;
+
+        System.out.println("A temperatura em Fahrenheit é: "+fahrenheit+"°F");
     }
 }
 
