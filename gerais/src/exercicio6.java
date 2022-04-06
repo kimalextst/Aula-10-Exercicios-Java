@@ -7,9 +7,18 @@ import java.util.Scanner;
 
 public class exercicio6 {
     public static void main(String[] args) {
-        
+        conversao();
     }
-    public static void name() {
-        
+    public static void conversao() {
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.print("Insira a cotação atual do dolar: R$");
+        double cotacao = leitor.nextDouble();
+        System.out.print("Insira a quantidade de dolares disponiveis: $");
+        double dolar = leitor.nextDouble();
+
+        double valor = dolar * cotacao;
+
+        System.out.printf("O valor em real é R$%.2f",valor);
     }
 }
